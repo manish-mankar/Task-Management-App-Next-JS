@@ -1,4 +1,6 @@
-## Task Management App - React JS & Next JS (Josh Talk - Frontend Developer Assignment)
+## Task Management App - React JS & Next JS 
+
+- Josh Talk - (Frontend Developer) Assignment 
 
 ## Tech Stack 
 
