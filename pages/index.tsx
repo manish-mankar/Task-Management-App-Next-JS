@@ -15,7 +15,6 @@ import {
 } from "../components/ui/select";
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  // In a real application, you'd fetch this data from a database or API
   const initialTasks: Task[] = [
     { id: '1', title: 'Complete project', description: 'Finish the task management app', priority: 'high', completed: false },
     { id: '2', title: 'Buy groceries', description: 'Get milk, eggs, and bread', priority: 'medium', completed: false },
