@@ -1,28 +1,109 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Task Management App - React JS & Next JS (Josh Talk - Frontend Developer Assignment)
 
-## Getting Started
+## Tech Stack 
 
-First, run the development server:
+- HTML, CSS, Tailwind CSS, JavaScript, React JS, Next JS and Typescript.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Approach to build a task management app
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1.Set up the project:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- Create a new Next.js project with React JS & TypeScript and Tailwind CSS.
+- Install necessary dependencies like shadcn/ui components and Framer Motion.
+- TypeScript is used to define the static types (e.g String, Number, Boolean)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+2.Create the main components:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- TaskList: To display all tasks.
+- TaskItem: To represent individual tasks.
+- TaskForm: To add new tasks.
+- SearchBar: To filter tasks.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3.Implement the core functionality:
+
+- Create a state to store tasks in the main component.
+- Implement functions for adding, editing, deleting, and toggling task completion.
+- Used local storage to persist user credentials across page reloads.
+
+4.Add sorting and filtering:
+
+- Implement sorting by priority and title.
+- Add a search function to filter tasks by title or description.
+
+5.Enhance the UI:
+
+- Use shadcn/ui components for a polished look.
+- Add animations with Framer Motion for a more engaging user experience.
+
+6.Responsive across different screen sizes:
+
+- Use Tailwind CSS classes to ensure the app looks good on all device sizes.
+
+7.Implement server-side rendering:
+
+- Use Next.js's getServerSideProps to load initial tasks.
+
+## Third Party Packages 
+
+- Shadcn Ui, framer-motion, clsx, tailwind-merge
+
+## Setup Instructions
+
+1. Install Dependencies:
+
+- `npm install`: Install dependencies.
+
+2. Start the development server:
+
+- `npm run dev`: Runs the app in development mode.
+
+3. Open your browser and visit `http://localhost:3000` to view the application.
+
+4.In the project directory, you can run:
+
+- `npm run build`: Builds the app for production to the `dist` folder.
+
+## Project Hierarchy
+
+task-management-app/
+├── components/
+│   ├── ui/
+│   │   ├── button.tsx
+│   │   ├── input.tsx
+│   │   ├── textarea.tsx
+│   │   ├── select.tsx
+│   │   ├── checkbox.tsx
+│   │   └── card.tsx
+│   ├── TaskList.tsx
+│   ├── TaskItem.tsx
+│   ├── TaskForm.tsx
+│   └── SearchBar.tsx
+├── lib/
+│   └── utils.ts
+├── pages/
+│   ├── _app.tsx
+│   ├── _document.tsx
+│   └── index.tsx
+├── public/
+│   └── favicon.ico
+├── styles/
+│   └── globals.css
+├── types/
+│   └── index.ts
+├── .gitignore
+├── next.config.js
+├── package.json
+├── README.md
+├── tailwind.config.js
+├── tsconfig.json
+└── components.json
+
+## Customizing the Project
+
+- Edit `pages/index.tsx` to modify the main application component.
+- Add new components in the `components/` directory.
+- Modify `styles/globals.css` for global styles.
+- API Routes `pages/api`.
 
 ## Learn More
 
